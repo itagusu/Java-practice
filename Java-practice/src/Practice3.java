@@ -89,3 +89,29 @@
 //	}
 //}
 
+//3.8 練習問題
+//①変数weightの値が60に等しい
+	//weight == 60
+//②変数age1とage2を合計して2倍したものが60を超えている
+	//(age1 + age2) * 2 > 60
+//③変数ageが奇数である
+	//age = age + 1
+	//age % 2 == 1 が正解
+//④変数 nameの中身の文字列が「湊」と等しい
+	//name.equals("湊");
+
+public class Practice3{
+	public static void main(String[] args) {
+		int isHungry = 1;
+		String food = "チャーハン";
+		System.out.println("こんにちは");
+		if (isHungry == 0) {
+			System.out.println("お腹がいっぱいです");
+		} else {
+			System.out.println("腹ペコです");
+			System.out.println(food + "をいただきます");
+		}
+		
+		System.out.println("ご馳走様でした");
+	}
+}
