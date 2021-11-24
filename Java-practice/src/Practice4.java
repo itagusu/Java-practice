@@ -21,22 +21,51 @@
 //	}
 //}
 
+//public class Practice4{
+//	public static void main(String[] args) {
+//		int[] scores = {10, 20, 30, 40, 50, 60};
+//		int num = scores.length;
+//		int sum = 0;
+//		int count = 0;
+//		for (int i = 0; i < num; i++) {
+//			if (scores[i] >= 50) {
+//				count++;
+//			}
+//			sum += scores[i];
+//		}
+//		int avg = sum / num;
+//		System.out.println("科目数は" + num + "科目です");
+//		System.out.println("合計点は" + sum + "です");
+//		System.out.println("平均点は" + avg + "です");
+//		System.out.println("50点以上の科目の数は" + count + "科目です");
+//	}
+//}
+
 public class Practice4{
 	public static void main(String[] args) {
-		int[] scores = {10, 20, 30, 40, 50, 60};
-		int num = scores.length;
-		int sum = 0;
-		int count = 0;
-		for (int i = 0; i < num; i++) {
-			if (scores[i] >= 50) {
-				count++;
-			}
-			sum += scores[i];
+		int[] seq = new int[10];
+		for (int i = 0; i < seq.length; i++) {
+			seq[i] = new java.util.Random().nextInt(4);
 		}
-		int avg = sum / num;
-		System.out.println("科目数は" + num + "科目です");
-		System.out.println("合計点は" + sum + "です");
-		System.out.println("平均点は" + avg + "です");
-		System.out.println("50点以上の科目の数は" + count + "科目です");
+		for (int i = 0; i < seq.length; i++) {
+//			switch (seq[i]) {
+//			case 0:
+//				System.out.println("A");
+//				break;
+//			case 1:
+//				System.out.println("T");
+//				break;
+//			case 2:
+//				System.out.println("G");
+//				break;
+//			case 3:
+//				System.out.println("C");
+//				break;
+//			}
+			//51~64行目を以下の２行で記載ができる
+			char[] base = {'A', 'T', 'G', 'C'};
+			System.out.print(base[seq[i]] + " ");
+		}
 	}
 }
+
