@@ -33,30 +33,67 @@
 //		System.out.println("メソッドを呼び出します");
 //		hello("板楠");
 //		hello("河原");
-//		add(100, 200, 0);
-//		add(300, 400, 5);
-//		add(5, 10, 1);
+//		int ans = add(100, 200, 0);
+////		add(300, 400, 5);
+////		add(5, 10, 1);
+//		System.out.println(ans);
 //		System.out.println("メソッド呼び出しを終了します");
 //	}
+//	
 //	public static void hello(String name) {
 //		System.out.println(name + "さんこんにちは");
 //	}
-//	public static void add(int x, int y, int z) {
+//	public static int add(int x, int y, int z) {
 //		int ans = x + y + z;
-//		System.out.println(x + "+" + y + "+" + z + "=" + ans);
+//		return ans;
+//		
 //	}
 //}
 
-//戻り値
-public class Practice5 {
-	public static void main(String[] args) {
-		System.out.println("メソッドを呼び出します");
-		int ans = add(300, 400, 5);
-		System.out.println(ans);
-		System.out.println("メソッド呼び出しを終了します");
+//public class Practice5{
+//	public static void incArray(int[] array) {
+//		for (int i = 0; i < array.length; i++){
+//			array[i]++;
+//		}
+//	}
+//	public static void main(String[]args) {
+//		int[] array = {1,2,4};
+//		incArray(array);
+//		for (int i = 0; i < array.length; i++) {
+//			System.out.println(array[i]);
+//		}
+//	}
+//}
+
+//練習問題
+public class Practice5{
+	public static void introduceOneself() {
+		String name = "板楠亮";
+		int age = 27;
+		double tall = 172.5;
+		char eto = '犬';
+		System.out.println("こんにちは。名前は"+name+"と申します。歳は"+age+"歳です。"+
+				"身長は"+tall+"cmです。"+eto+"年です。");
 	}
-	public static int add(int x, int y, int z) {
-		int ans = x + y + z;
-		return ans;
+	public static void email(String title,String address,String text) {
+		
+		System.out.println(address + "に、以下のメールを送信しました");
+		System.out.println("件名:" + title);
+		System.out.println("本文:" + text);
+	}
+	public static void email(String address, String text) {
+		System.out.println(address + "に、以下のメールを送信しました");
+		System.out.println("件名:無題");
+		System.out.println("本文:" + text);
+	}
+	public static void main(String[]args) {
+//練習問題5-1
+//		introduceOneself();
+//練習問題5-2
+		String title = "明日の件";
+		String address = "ir060906@gmail.com";
+		String text = "明日は予定通り１０時に自宅に向かいます。";
+		email(title,address,text);
+		email(address,text);
 	}
 }
