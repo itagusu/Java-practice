@@ -17,6 +17,7 @@ public class Chapter9 {
 	public static void main(String[]args) {
 		//hairetu();
 		kakutyo();
+		
 	}
 	public static void hairetu() {
 		int array[] = {1,2,3,8};
