@@ -15,10 +15,12 @@ public class Cleric {
 	
 	public void pray(int sec) {
 		System.out.println(this.name + "は" + sec + "秒間祈った");
-		this.mp -= 8;
 		int recover = new java.util.Random().nextInt(3) + sec;
+		/*Math,min（a,b) aとbのどちらか小さい方
+		 * this.mp が8だとしたら2が最大の回復量、recoverは3~5回復するため
+		 * 小さい方を選択する*/
 		int recoverActual = Math.min(this.MAX_MP - this.mp, recover);
-		
+		//this.mp(現在のhpにracoverActualを足す)
 		this.mp += recoverActual;
 		System.out.println(recoverActual);
 		//return.recoverActual;
