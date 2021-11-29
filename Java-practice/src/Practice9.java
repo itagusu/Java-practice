@@ -1,13 +1,16 @@
 
 public class Practice9 {
 	public static void main(String[]args) {
-		Hero h1 = new Hero();
-		h1.name = "はる";
-		h1.hp = 100;
+		Hero h1 = new Hero("はる");
+		System.out.println(h1.hp);
+//		h1.name = "はる";
+//		h1.hp = 100;
 		
-		Hero h2 = new Hero();
-		h2.name = "ゆうり";
-		h2.hp = 120;
+		Hero h2 = new Hero("ゆうり");
+//		h2.name = "ゆうり";
+//		h2.hp = 120;
+		Hero h3 = new Hero();
+		System.out.println(h3.name);
 		
 		Sword s1 = new Sword();
 		s1.name = "秋水";
@@ -28,6 +31,8 @@ public class Practice9 {
 		
 		h1.attack();
 		h2.attack();
+		w.heal(h1);
+		w.heal(h2);
 		w.heal(h1);
 		w.heal(h2);
 	}
