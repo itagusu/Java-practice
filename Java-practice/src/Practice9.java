@@ -35,5 +35,14 @@ public class Practice9 {
 		w.heal(h2);
 		w.heal(h1);
 		w.heal(h2);
+		
+		Thief t1 = new Thief("アサカ",40,5);
+		System.out.println(t1.name + t1.hp + " " +t1.mp);
+		Thief t2 = new Thief("アカサ",35);
+		System.out.println(t2.name + t2.hp + " " + t1.mp);
+		Thief t3 = new Thief("アカサ");
+		System.out.println(t3.name + t3.hp + " " + t3.mp);
+		Thief t4 = new Thief();
+		System.out.println(t4.name + t4.hp + " " + t4.mp);
 	}
 }
