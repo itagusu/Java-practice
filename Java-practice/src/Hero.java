@@ -30,7 +30,8 @@ public class Hero {
 		System.out.println(this.name + "は" + sec + "秒座った");
 		System.out.println(this.name + "は" + sec + "ポイント回復した");
 	}
-	public void slip() {
+	//finalがついているslipクラスでは子クラスでオーバーライド禁止
+	public final void slip() {
 		this.hp -= 5;
 		System.out.println(this.name + "は転んだ");
 		System.out.println("5のダメージ");
