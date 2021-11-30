@@ -1,5 +1,6 @@
 
 public class Matango {
+	String name = "きのこ";
 	int hp;
 	final int LEVEL = 10;
 	char suffix;

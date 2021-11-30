@@ -13,9 +13,14 @@ public class Hero {
 //		this.name = "テスト";
 		this("テスト");
 	}
-	public void attack() {
+	
+	public void attack(Matango m) {
 		System.out.println(this.name + "は、" + this.sw.name + "で攻撃した");
+		m.hp -= 3;
+		System.out.println("3ポイントのダメージ" + m.hp);
+		
 	}
+	
 	public void sleep() {
 		this.hp = 100;
 		System.out.println(this.name + "は、眠って回復した");

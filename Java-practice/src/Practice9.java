@@ -2,7 +2,10 @@
 public class Practice9 {
 	public static void main(String[]args) {
 		Hero h1 = new Hero("はる");
-		System.out.println(h1.hp);
+		/*Heroクラスで
+		 * public Hero(String name) {
+		this.hp = 100;を初期値で設定しているため*/
+		System.out.println(h1.hp); // 100が設定される
 //		h1.name = "はる";
 //		h1.hp = 100;
 		
@@ -29,20 +32,30 @@ public class Practice9 {
 		w.hp = 50;
 		System.out.println(w.name + "のHPは" + w.hp);
 		
-		h1.attack();
-		h2.attack();
-		w.heal(h1);
-		w.heal(h2);
-		w.heal(h1);
-		w.heal(h2);
+		Matango m = new Matango();
+		m.hp = 50;
 		
-		Thief t1 = new Thief("アサカ",40,5);
-		System.out.println(t1.name + t1.hp + " " +t1.mp);
-		Thief t2 = new Thief("アカサ",35);
-		System.out.println(t2.name + t2.hp + " " + t1.mp);
-		Thief t3 = new Thief("アカサ");
-		System.out.println(t3.name + t3.hp + " " + t3.mp);
-		Thief t4 = new Thief();
-		System.out.println(t4.name + t4.hp + " " + t4.mp);
+		SuperHero sh = new SuperHero("みゆ");
+		
+		
+		h1.attack(m);
+		h2.attack(m);
+		w.heal(h1);
+		w.heal(h2);
+		w.heal(h1);
+		w.heal(h2);
+		h1.run();
+		sh.run();
+		sh.fly();
+		
+//		//練習問題9.1
+//		Thief t1 = new Thief("アサカ",40,5);
+//		System.out.println(t1.name + t1.hp + " " +t1.mp);
+//		Thief t2 = new Thief("アカサ",35);
+//		System.out.println(t2.name + t2.hp + " " + t1.mp);
+//		Thief t3 = new Thief("アカサ");
+//		System.out.println(t3.name + t3.hp + " " + t3.mp);
+//		Thief t4 = new Thief();
+//		System.out.println(t4.name + t4.hp + " " + t4.mp);
 	}
 }
