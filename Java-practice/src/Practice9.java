@@ -44,9 +44,11 @@ public class Practice9 {
 		w.heal(h2);
 		w.heal(h1);
 		w.heal(h2);
+		w.heal(sh);
 		h1.run();
 		sh.run();
 		sh.fly();
+		sh.land();
 		
 //		//練習問題9.1
 //		Thief t1 = new Thief("アサカ",40,5);
