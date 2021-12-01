@@ -32,10 +32,11 @@ public class Practice9 {
 		w.hp = 50;
 		System.out.println(w.name + "のHPは" + w.hp);
 		
-		Matango m = new Matango();
+		Matango m = new Matango('Z');
 		m.hp = 50;
 		
 		SuperHero sh = new SuperHero("みゆ");
+		PoisonMatango pm = new PoisonMatango('X');
 		
 		
 		h1.attack(m);
@@ -49,6 +50,8 @@ public class Practice9 {
 		sh.run();
 		sh.fly();
 		sh.land();
+		m.attack(h1);
+		pm.attack(h1);
 		
 //		//練習問題9.1
 //		Thief t1 = new Thief("アサカ",40,5);
