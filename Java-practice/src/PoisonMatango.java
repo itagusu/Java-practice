@@ -11,9 +11,7 @@ public class PoisonMatango extends Matango {
 			int pa = h.hp / 5;
 			h.hp -= pa;
 			System.out.println(pa + "のダメージ." + h.name + "のHPは" + h.hp + "になった。");
-			System.out.println(PoisonCount);
 			PoisonCount--;
-			System.out.println(PoisonCount);
 		}
 	}
 }

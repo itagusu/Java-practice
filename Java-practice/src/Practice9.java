@@ -38,6 +38,9 @@ public class Practice9 {
 		SuperHero sh = new SuperHero("みゆ");
 		PoisonMatango pm = new PoisonMatango('X');
 		
+		Dancer d = new Dancer();
+		d.name = "いた";
+		
 		
 		h1.attack(m);
 		h2.attack(m);
@@ -52,6 +55,7 @@ public class Practice9 {
 		sh.land();
 		m.attack(h1);
 		pm.attack(h1);
+		d.dance();
 		
 //		//練習問題9.1
 //		Thief t1 = new Thief("アサカ",40,5);
