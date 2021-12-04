@@ -9,7 +9,7 @@ public class Dancer extends Character{
 	//     ② 未完成部分をなくす
 	public void attack(Matango m) {
 		System.out.println(this.name + "の攻撃");
-		System.out.println("的に３ダメージ");
+		System.out.println("敵に３ダメージ");
 		m.hp -= 3;
 	}
 }  

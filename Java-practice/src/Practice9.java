@@ -56,6 +56,7 @@ public class Practice9 {
 		m.attack(h1);
 		pm.attack(h1);
 		d.dance();
+		d.attack(m);
 		
 //		//練習問題9.1
 //		Thief t1 = new Thief("アサカ",40,5);
