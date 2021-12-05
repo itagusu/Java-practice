@@ -1,4 +1,5 @@
-
+// インターフェイスによる多重継承
+// Hero2, Princess, Creatureは全てインターフェイス
 public class PrincessHero implements Hero2, Princess, Creature {
 	String name;
 	
