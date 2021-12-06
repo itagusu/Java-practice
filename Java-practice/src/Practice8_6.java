@@ -4,7 +4,7 @@ public class Practice8_6 {
 		Cleric c = new Cleric();
 		c.name = "Haru";
 		c.selfAid();
-		c.pray(3);
+		c.pray();
 	}
 	
 	
