@@ -6,6 +6,7 @@ public class Practice1 {
 //		int c = a*b;
 //		System.out.println("縦３横５の長方形の面積は" + c);
 		
+		//型の定義
 		boolean result = true;
 		char name = '駆';
 		final double pi = 3.14;
