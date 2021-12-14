@@ -31,7 +31,16 @@ public class Practice2 {
 		int fortune = new java.util.Random().nextInt(4);
 		++fortune;
 		System.out.println("占いの結果が出ました");
+		if(fortune == 1) {
+			System.out.println(age + "歳の" + name + "さんの運気は大吉");
+		}else if(fortune == 2) {
+			System.out.println(age + "歳の" + name + "さんの運気は小吉");
+		}else if(fortune == 3) {
+			System.out.println(age + "歳の" + name + "さんの運気は吉");
+		}else {
+			System.out.println(age + "歳の" + name + "さんの運気は凶");
+		}
 		System.out.println(age + "才の" + name + "さんの運気番号は" + fortune);
-		System.out.println("1:大吉　2:小吉　3:吉　4:凶");
+//		System.out.println("1:大吉　2:小吉　3:吉　4:凶");
 	}
 }
