@@ -2,7 +2,7 @@
 public class Practice3_8 {
 	public static void main(String[]args) {
 		//practice3_3();
-		practice3_5();
+		practice3_6();
 	}
 	public static void practice3_1() {
 		int weight = 60;
@@ -40,5 +40,20 @@ public class Practice3_8 {
 		case 4:
 			System.out.println("変更します");
 		}
+	}
+	public static void practice3_6() {
+		System.out.println("【数あてゲーム】");
+		int ans = new java.util.Random().nextInt(10);
+		for (int i = 0; i < 5; i++) {
+			System.out.println("0~9の数字を選択してください");
+			int num = new java.util.Scanner(System.in).nextInt();
+			if (num == ans) {
+				System.out.println("アタリ！");
+				break;
+			} else {
+				System.out.println("違います");
+			}
+		}
+		System.out.println("ゲーム終了");
 	}
 }
