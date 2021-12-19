@@ -27,17 +27,38 @@ public class App {
 //     return lines.toArray(new String[lines.size()]);
   }
   public static void example1(){
-	int a = 1000;
+	double a = 1000;
     int b = 600;
     int c = 250;
     int d = 100;
     LocalTime BaseTime = LocalTime.of(22, 00, 00);
-    LocalTime time1 = LocalTime.of(10, 25, 00);
+    //LocalTime time1 = LocalTime.of(10, 25, 00);
     LocalTime time2 = LocalTime.of(23, 40, 00);
-    boolean t1 = BaseTime.isBefore(time1);
+    int distance1 = 1500;
+    double distance2 = 2001;
+    // trueの場合1.2倍
+    //boolean t1 = BaseTime.isBefore(time1);
     boolean t2 = BaseTime.isBefore(time2);
-    System.out.println(t1);
     System.out.println(t2);
+    double AddDistance1 = distance1 - a;
+    double AddDistance2 = distance2 - a;
+    double AddCharge1 = Math.ceil(AddDistance1/c);
+    double AddCharge2 = Math.ceil(AddDistance2/c);
+    
+    int total1 = b + (int)Math.ceil(AddDistance1/c) * d;
+    int total2 = b + (int)Math.ceil(AddDistance2/c) * d;
+    System.out.println(total1);
+    System.out.println(total2);
+    System.out.println(Math.round(total1 + (total2 * 1.2)));
+    
+    if (t2 == true) {
+    	
+    } else {
+    	
+    }
+    	
+//    int z = b + 
+//    System.out.println(z);
     
     
     
