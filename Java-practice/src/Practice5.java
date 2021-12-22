@@ -39,13 +39,13 @@
 //		System.out.println(ans);
 //		System.out.println("メソッド呼び出しを終了します");
 //	}
+//	public static int add(int x, int y, int z) {
+//		int ans = x + y + z;
+//		return ans;
 //	
 //	public static void hello(String name) {
 //		System.out.println(name + "さんこんにちは");
 //	}
-//	public static int add(int x, int y, int z) {
-//		int ans = x + y + z;
-//		return ans;
 //		
 //	}
 //}
