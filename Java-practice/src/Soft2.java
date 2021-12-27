@@ -22,5 +22,8 @@ public class Soft2{
     	System.out.println("積 " + ( x * y ) );
     	System.out.print("商 " + ( x / y ) );
     	System.out.println(" 余り " + ( x % y ) );
+    	System.out.println("平均値 " + ((x+y)/2));
+    	int age = new java.util.Scanner(System.in).nextInt();
+    	System.out.println(age * 365);
     }
 }
