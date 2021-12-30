@@ -32,5 +32,10 @@ public class Soft3 {
 		    System.out.println( "xはyより小さい。" );
 		else
 		    System.out.println( "xとyは等しい。" );
+		if((x%2)==0) {
+			System.out.println("偶数");
+		}else {
+			System.out.println("奇数");
+		}
 	}
 }
