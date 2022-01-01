@@ -4,7 +4,8 @@ public class Soft3 {
 //		soft3_1();
 //		soft3_2();
 //		soft3_4();
-		soft3_6();
+//		soft3_6();
+		soft3_7();
 	}
 	public static void soft3_1() {
 		int x = new java.util.Scanner(System.in).nextInt();
@@ -54,6 +55,17 @@ public class Soft3 {
 			}else {
 				System.out.println("負の奇数");
 			}
+		}
+	}
+	public static void soft3_7() {
+		System.out.println("スコアを入力");
+		int score = new java.util.Scanner(System.in).nextInt();
+		if (score >= 60 && score < 80) {
+			System.out.println("合格！よくできました");
+		}else if(score >= 80) {
+			System.out.println("合格！大変よくできました");
+		}else {
+			System.out.println("不合格。残念でした");
 		}
 	}
 }
