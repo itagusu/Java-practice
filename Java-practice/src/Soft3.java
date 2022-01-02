@@ -5,7 +5,8 @@ public class Soft3 {
 //		soft3_2();
 //		soft3_4();
 //		soft3_6();
-		soft3_7();
+//		soft3_7();
+		soft3_8();
 	}
 	public static void soft3_1() {
 		int x = new java.util.Scanner(System.in).nextInt();
@@ -66,6 +67,22 @@ public class Soft3 {
 			System.out.println("合格！大変よくできました");
 		}else {
 			System.out.println("不合格。残念でした");
+		}
+	}
+	public static void soft3_8() {
+		System.out.println("中間テストの点数を入力");
+		int midternTestScore = new java.util.Scanner(System.in).nextInt();
+		System.out.println("期末テストの点数を入力");
+		int finalTestScore = new java.util.Scanner(System.in).nextInt();
+		if(midternTestScore >= 60 && finalTestScore >= 60) {
+			System.out.println("合格");
+		} else if((midternTestScore + finalTestScore) >=130) {
+			System.out.println("合格");
+		} else if((midternTestScore + finalTestScore) >=100 &&
+				(midternTestScore >= 90 || finalTestScore >= 90)) {
+			System.out.println("合格");
+		} else {
+			System.out.println("不合格");
 		}
 	}
 }
