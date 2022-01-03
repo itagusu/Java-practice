@@ -6,7 +6,8 @@ public class Soft3 {
 //		soft3_4();
 //		soft3_6();
 //		soft3_7();
-		soft3_8();
+//		soft3_8();
+		soft3_10();
 	}
 	public static void soft3_1() {
 		int x = new java.util.Scanner(System.in).nextInt();
@@ -70,6 +71,10 @@ public class Soft3 {
 		}
 	}
 	public static void soft3_8() {
+//		両方とも 60 点以上の場合、合格
+//		合計が 130 点以上の場合、合格
+//		合計が 100 点以上で、どちらかの試験が 90 点以上であれば合格
+//		上記以外は不合格
 		System.out.println("中間テストの点数を入力");
 		int midternTestScore = new java.util.Scanner(System.in).nextInt();
 		System.out.println("期末テストの点数を入力");
@@ -84,5 +89,24 @@ public class Soft3 {
 		} else {
 			System.out.println("不合格");
 		}
+	}
+	public static void soft3_10() {
+		int x = new java.util.Scanner(System.in).nextInt();
+		int y = new java.util.Scanner(System.in).nextInt();
+		
+		if(x < y && (x%2 == 0 && y%2 == 0))
+		    System.out.println( "xはyより小さく、かつ、xとyは共に偶数である。" );
+
+		if( ～ 条件 ～ )
+		    System.out.println( "xとyは等しく、かつ、負の数である。" );
+
+		if( ～ 条件 ～ )
+		    System.out.println( "xはyより小さい、または、xは偶数である。" );
+
+		if( ～ 条件 ～ )
+		    System.out.println( "xは10以下または100以上で、かつ、yは10以上かつ100以下である。" );
+
+		if( ～ 条件 ～ )
+		    System.out.println( "xもyも負の数である、ではない。" );
 	}
 }
